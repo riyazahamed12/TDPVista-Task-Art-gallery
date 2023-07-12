@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ArtVista - Virtual Art Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(#7dc6ed, #f15599);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    h1,h2{
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      height: 100vh;
+      overflow-y: scroll;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+      width:auto;
+    }
+
+    .artwork {
+      width: 400px;
+      height: 400px;
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .artwork img {
+      width: 100%;
+      height: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s;
+      border-radius: 10px;
+    }
+
+    .artwork:hover {
+      transform: scale(1.05);
+    }
+
+    .artwork:hover img {
+      transform: scale(1.1);
+    }
+
+    .art-details {
+      opacity: 0;
+      transition: opacity 0.3s;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #d0e7f3;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .artwork:hover .art-details {
+      opacity: 1;
+    }
+
+    .art-title {
+      font-weight: bold;
+    }
+
+    .art-artist {
+      color: black;
+      font-style: italic;
+    }
+
+    .art-details p {
+      margin: 0;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const artworks = document.getElementsByClassName('artwork');
+      for (let i = 0; i < artworks.length; i++) {
+        artworks[i].addEventListener('mouseenter', function() {
+          this.classList.add('active');
+        });
+
+        artworks[i].addEventListener('mouseleave', function() {
+          this.classList.remove('active');
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="t5.html">Exhibitions</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Welcome to ArtVista</h1>
+    <section id="exhibition-room">
+      <h2>Virtual Exhibition Room</h2>
+      <div id="artwork-container" class="flex-container">
+        <div class="artwork">
+          <img src="Art 1.jpeg" alt="Artwork 1">
+          <div class="art-details">
+            <h3 class="art-title">Mona Lisa</h3>
+            <p class="art-artist">Leonardo da Vinci</p>
+            <p>It is also called Portrait of Lisa Gherardini, wife of Francesco del Giocondo, Italian La Gioconda, or French La Joconde, oil painting on a poplar wood panel by Leonardo da Vinci, probably the world's most famous painting</p>
+          </div>
+        </div>
+        <div class="artwork">
+          <img src="p1.jpg" alt="Artwork 2">
+          <div class="art-details">
+            <h3 class="art-title">Girl with a pearl earring</h3>
+            <p class="art-artist">Johannes Vermeer</p>
+            <p>Girl With A Pearl Earring is an oil painting by Dutch Golden Age painter Johannes Vermeer, dated c. 1665. Going by various names over the centuries, it became known by its present title towards the end of the 20th century after the earring worn by the girl portrayed there.</p>
+          </div>
+        </div>
+        <div class="artwork">
+          <img src="p2.jpg" alt="Artwork 3">
+          <div class="art-details">
+            <h3 class="art-title">The Night Watch</h3>
+            <p class="art-artist">Rembrandt</p>
+            <p>Militia Company of District II under the Command of Captain Frans Banninck Cocq, also known as The Shooting Company of Frans Banning Cocq and Willem van Ruytenburch, but commonly referred to as The Night Watch, is a 1642 painting by Rembrandt van Rijn</p>
+          </div>
+        </div>
+        <div class="artwork">
+          <img src="p5.jpg" alt="Artwork 3">
+          <div class="art-details">
+            <h3 class="art-title">The Last Supper</h3>
+            <p class="art-artist">Leonardo da Vinci</p>
+            <p>The Last Supper is a mural painting by the Italian High Renaissance artist Leonardo da Vinci, dated to c. 1495–1498.</p>
+          </div>
+        </div>
+        <div class="artwork">
+          <img src="p4.jpg" alt="Artwork 3">
+          <div class="art-details">
+            <h3 class="art-title">Portrait of Ginevra Benci</h3>
+            <p class="art-artist">Leonardo da Vinci</p>
+            <p>Ginevra de' Benci is a portrait painting by Leonardo da Vinci of the 15th-century Florentine aristocrat Ginevra de' Benci. Exhibited at the National Gallery of Art in Washington, D.C. US; it is the only painting by Leonardo on public view in the Americas</p>
+          </div>
+        </div>
+        <div class="artwork">
+          <img src="p6.jpg" alt="Artwork 4">
+          <div class="art-details">
+            <h3 class="art-title">The Large Bathers</h3>
+            <p class="art-artist">Paul Cezanne</p>
+            <p>The Bathers is an oil painting by French artist Paul Cézanne first exhibited in 1906. The painting, which is exhibited in the Philadelphia Museum of Art, is the largest of a series of Bather paintings </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ArtVista - Virtual Art Gallery</title>
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("ar\ h1.jpg");
+      background-repeat: no-repeat;
+      height: 50vh;
+      width: 100%;
+
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .welcome {
+      height: 100vh;
+      background-image: url("");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      text-align: center;
+    }
+
+    .welcome h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    
+    }
+
+    .highlighted-programs {
+      padding: 50px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background-color: rgb(207, 224, 237);
+    }
+
+    .program {
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgb(255, 0, 0);
+      background-image: url("hr.avif");
+      background-position: center;
+    }
+
+    .program h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding:1px;
+      text-align: center;
+    }
+
+    .footer ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .footer ul li a {
+      color: rgb(0, 97, 253);
+      text-decoration: none;
+    }
+
+    .subscribe {
+      margin-top: 20px;
+    }
+
+    form{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .subscribe input[type="email"] {
+      padding: 10px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius:5px;
+      margin-right: 10px;
+    }
+
+
+button[type="submit"] {
+  background-color: #f00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color:#d00;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="t5.html">Exhibitions</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="welcome">
+    <div>
+      <h1>Welcome to ArtVista</h1>
+      <p>Explore the beauty of art</p>
+    </div>
+  </section>
+  <section class="highlighted-programs">
+    <div class="program">
+      <h3>Exhibition</h3>
+      <p>Discover captivating artworks</p>
+    </div>
+    <div class="program">
+      <h3>Artists</h3>
+      <p>Meet talented artists</p>
+    </div>
+    <div class="program">
+      <h3>Store</h3>
+      <p>Shop for unique art pieces</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="subscribe">
+      <h3>Subscribe to our newsletter:</h3>
+      <form>
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <ul>
+      <li><a href="https://www.facebook.com/login/">Facebook</a></li>
+      <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Den">Twitter</a></li>
+      <li><a href="https://www.instagram.com/accounts/login/">Instagram</a></li>
+    </ul>
+    </div>
+    <p>Contact us: info@artvista.com</p>
+    <p>&copy; 2023 ArtVista. All rights reserved.</p>
+  </footer>
+</body>
+</html>

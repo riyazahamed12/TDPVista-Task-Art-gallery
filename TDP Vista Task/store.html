@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ArtVista - Store</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(#7dc6ed, #f15599);
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    h1{
+      text-align: center;
+    }
+
+    .store-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px;
+    }
+
+    .painting {
+      width: 300px;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .painting:hover {
+      transform: scale(1.1);
+    }
+
+    .painting img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .painting:hover img {
+      transform: scale(1.2);
+    }
+
+    .painting-details {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .painting-price {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .painting-reviews {
+      margin-bottom: 10px;
+    }
+
+    .add-to-cart {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cart-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #d0e7f3;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    .cart-item-details {
+      flex: 1;
+    }
+
+    .total-price {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .checkout-btn {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .checkout-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="t5.html">Exhibitions</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1><b>Welcome to ArtVista - Store </b></h1>
+  <section class="store-container">
+    <div class="painting">
+      <img src="Art 1.jpeg" alt="Painting 1">
+      <div class="painting-details">
+        <h3 class="painting-price">$200</h3>
+        <p class="painting-reviews">5 Reviews</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="painting">
+      <img src="Art 3.jpeg" alt="Painting 2">
+      <div class="painting-details">
+        <h3 class="painting-price">$150</h3>
+        <p class="painting-reviews">3 Reviews</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="painting">
+      <img src="Art 2.jpeg" alt="Painting 3">
+      <div class="painting-details">
+        <h3 class="painting-price">$300</h3>
+        <p class="painting-reviews">2 Reviews</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="painting">
+      <img src="Art 4.jpeg" alt="Painting 4">
+      <div class="painting-details">
+        <h3 class="painting-price">$250</h3>
+        <p class="painting-reviews">4 Reviews</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cart-section">
+    <h2>Shopping Cart</h2>
+    <div class="cart-item">
+      <img src="Art 1.jpeg" alt="Painting 1">
+      <div class="cart-item-details">
+        <h4>Mona lisa</h4>
+        <p>$200</p>
+      </div>
+    </div>
+    <p class="total-price">Total: $200</p>
+    <a href="#" class="checkout-btn">Checkout</a>
+  </section>
+
+</body>
+</html>
